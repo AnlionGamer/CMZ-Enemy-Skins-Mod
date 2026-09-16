@@ -1,0 +1,86 @@
+{
+  "referenceOnly": true,
+  "note": "Public reference summary for the v1.1.1 package. The installable .cmzmod on the GitHub Releases page contains the complete generated manifest and package-integrity metadata.",
+  "packageFormat": 1,
+  "id": "cmz.enemy-appearance-variety",
+  "name": "Enemy Skins",
+  "author": "AnlionGamer",
+  "publisher": "AnlionGamer",
+  "version": "1.1.1",
+  "gameVersion": "1.9.9.8",
+  "framework": "1.0.0",
+  "api": "1.0.0",
+  "recommendedManager": "1.2.0+",
+  "entryAssembly": "CMZ.EnemySkins.dll",
+  "entryType": "CMZ.EnemySkins.EnemySkinsMod",
+  "license": "AnlionGamer Community Distribution Terms v1.0",
+  "packageFile": "CMZ_Enemy_Skins_v1.1.1.cmzmod",
+  "catalog": {
+    "totalCustomRecipes": 989,
+    "zombies": 539,
+    "zombiePools": 7,
+    "customRecipesPerZombiePool": 77,
+    "skeletonFamily": 196,
+    "felguardHellLord": 46,
+    "alienCustom": 39,
+    "alienAuthenticStockCandidateIncluded": true,
+    "dragonsTotal": 169,
+    "fireDragon": 14,
+    "forestDragon": 21,
+    "lizardSandDragon": 36,
+    "iceDragon": 60,
+    "skeletonDragon": 38,
+    "authenticDefaultsRetained": true
+  },
+  "selection": {
+    "mode": "persistent stochastic anti-repeat",
+    "completeDeckRotation": false,
+    "fixedSequence": false,
+    "exactAppearanceCooldown": true,
+    "softSourceFamilyRecencyPenalties": true,
+    "usageAgeBalancing": true,
+    "starvationProtection": true
+  },
+  "settings": [
+    {
+      "key": "groundTextureEdge",
+      "type": "choice",
+      "defaultValue": "native",
+      "choices": ["native", "256", "512", "1024"]
+    },
+    {
+      "key": "skeletonTextureEdge",
+      "type": "choice",
+      "defaultValue": "native",
+      "choices": ["native", "256", "512", "1024"]
+    },
+    {
+      "key": "alienTextureEdge",
+      "type": "choice",
+      "defaultValue": "native",
+      "choices": ["native", "256", "512", "1024"]
+    },
+    {
+      "key": "dragonTextureEdge",
+      "type": "choice",
+      "defaultValue": "native",
+      "choices": ["native", "256", "512", "1024"]
+    },
+    {
+      "key": "textureCacheMiB",
+      "type": "integer",
+      "defaultValue": 192,
+      "min": 32,
+      "max": 512
+    }
+  ],
+  "validation": {
+    "portableContractTestsPassed": 80,
+    "sourceCatalogValidationPassed": true,
+    "reviewedSha256Pins": 78,
+    "windowsBuilderRuntimePathValidated": true,
+    "liveGameVisualPlayTestCompleted": true,
+    "finalMetadataOnlyHardeningAfterPlayTest": true
+  },
+  "multiplayer": "Client-side cosmetic only. Does not modify or extend multiplayer traffic or protocol and does not require other players to install the mod or Mod Manager."
+}
